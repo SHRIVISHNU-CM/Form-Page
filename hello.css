@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(pexels-sanat-anghan-6757981.jpg) center center no-repeat ;
+    background-size: cover;
+}
+.main{
+    height: 500px;
+    width: 500px;
+
+    background: transparent;
+    backdrop-filter: blur(9px);
+    border-radius: 2rem;
+    
+}
+.main h2{
+    text-align: center;
+    margin-top:2rem ;
+}
+.input-area{
+    position: relative;
+    margin: 15px 0;
+    border-bottom: 2px solid beige;
+}
+.form{
+    padding: 2rem;
+}
+.input-area label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-40%);
+    pointer-events: none;
+    font-size: 15px;
+    transition: 0.15s ease;
+}
+.input-area input{
+    width: 100%;
+    border:none;
+    outline:none;
+    height: 30px;
+    background: transparent;
+    font-size: 15px;
+    color: #fff;
+}
+.input-area input:focus~label,
+.input-area input:valid~label{
+    font-size: 1rem;
+    top: 10px;
+    transform: translateY(-100%);
+}
+.main2{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-around;
+}
+.remember-me:hover,.password:hover{
+    color: #66ea2d;
+    cursor: pointer;
+}
+.main3{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 2rem;
+}
+.main3 button{
+    width: 10rem;
+    padding: 1rem;
+    color: #000;
+    background: transparent;
+    transition: all 1s ease-in-out;
+    border: 0.1rem solid #fff;
+    font-family: 'Rubik', sans-serif;
+
+}
+.main3 button:hover{
+    background-color: #c16516;
+    border: 0.1rem solid #c16516;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    color: #fff;
+}
+.main4{
+    text-align: center;
+    position: relative;
+    top: 60px;
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+}
+#Register{
+    cursor: pointer;
+
+
+}
+#Register:hover{
+    color: #66ea2d;
+}
